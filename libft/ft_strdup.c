@@ -9,8 +9,8 @@ char *ft_strdup(const char *src)
     i = 0;
     size = 0;
 
-    while (src[i])
-        i++;
+    while (src[size])
+        size++;
     if(!(word = malloc(sizeof(char) * (size + 1))))
         return (NULL);
     while (src[i])

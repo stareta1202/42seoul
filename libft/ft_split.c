@@ -61,7 +61,7 @@ static void ft_cutwords(char const *s, char c, char **str)
             count = i;
             while (s[i] != c)
                 i++;
-            if ((str[j]) = (char *)malloc (sizeof(char) * (i - count +! ))) == 0)
+            if (((str[j]) = (char *)malloc (sizeof(char) * (i - count + 1))) == 0)
             {
                 ft_free(str, j);
                 return (0);
@@ -87,5 +87,5 @@ char **ft_split(char const *s, char c)
     if (count == 0)
         return (str);
     ft_cutwords(s, c, str);
-    return (str)
+    return (str);
 }
